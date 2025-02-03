@@ -1,0 +1,170 @@
+.a {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 21px #D15BFC;
+    transition-duration: 500ms;
+}
+
+.jersey-10-regular {
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.b {
+    transform: rotate(90deg);
+}
+
+.packA {
+    position: relative;
+    top: 400px;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    float: left;
+    margin-left: 13%;
+}
+
+.button {
+    position: relative;
+    transition-duration: 500ms;
+    height: 140px;
+    width: 280px;
+    left: 855%;
+    top: 350px;
+    background-color: transparent;
+    border: 5px solid #4CFFF6;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.ro {
+    position: relative;
+    transform: rotate(0deg);
+    top: 0px;
+    transition-duration: 500ms;
+}
+
+.hidden {
+    width: 5%;
+    height: 100px;
+}
+
+.hidden:active .button {
+    background-color: #4CFFF6;
+    box-shadow:
+        0 0 10px #4CFFF6,
+        0 0 21px #4CFFF6,
+        0 0 42px #4CFFF6,
+        0 0 82px #ffffff;
+}
+
+.hidden:hover .icon {
+    animation: 500ms ease-in 0s infinite reverse both running runro;
+}
+
+@keyframes runro {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 1700px) {
+    .packA {
+        position: relative;
+        left: 10%;
+        top: 300px;
+    }
+
+    .button {
+        position: relative;
+        left: 780%;
+        top: 300px;
+    }
+    #filp1 {
+        top: 400px;
+        left: 5%;
+        
+    }
+
+    #filp2 {
+        top: 400px;
+        left: 5%;
+    }
+
+    #filp3 {
+        top: 400px;
+        left: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .a {
+        position: relative;
+        width: 90px;
+        height: 40px;
+        background-color: #ffffff;
+        box-shadow:
+            0 0 10px #D15BFC,
+            0 0 21px #ffffff;
+        transition-duration: 500ms;
+    }
+
+    .button {
+        position: relative;
+        left: 600%;
+        top: 750px;
+    }
+
+    .packA {
+        position: absolute;
+        transform: rotate(90deg);
+    }
+
+    #filp1 {
+        top: 60px;
+        left: 32%;
+        
+    }
+
+    #filp2 {
+        top: 250px;
+        left: 32%;
+    }
+
+    #filp3 {
+        top: 450px;
+        left: 32%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .button {
+        position: relative;
+        left: 100px;
+        top: 750px;
+    }
+    #filp1 {
+        top: 10px;
+        left: 32%;
+        
+    }
+
+    #filp2 {
+        top: 200px;
+        left: 32%;
+    }
+
+    #filp3 {
+        top: 400px;
+        left: 32%;
+    }
+}
